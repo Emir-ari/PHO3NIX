@@ -57,7 +57,70 @@ Main architectural areas include:
 - Reporting
 - Knowledge Base
 - Plugin & Tool Integration Layer
+## Core Architecture
 
+PHO3NIX is built as a modular platform rather than a single security script.
+
+Main architectural areas include:
+
+- Core Orchestration Engine
+- AI Reasoning & Planning
+- Asset & Attack-Surface Management
+- Reconnaissance
+- Network Security Assessment
+- Web Application Security
+- API Security
+- Identity & Active Directory
+- Cloud Security
+- Container & Kubernetes Security
+- Wireless Security
+- Mobile Security
+- IoT / Embedded Security
+- DevOps & Supply-Chain Security
+- Vulnerability Validation
+- Threat Intelligence Enrichment
+- Evidence Management
+- Reporting
+- Knowledge Base
+- Plugin & Tool Integration Layer
+
+### High-Level Architecture
+
+```mermaid
+flowchart TD
+
+    A[Operator / User] --> B[CLI / Dashboard / API]
+    B --> C[Core Orchestration Engine]
+
+    C --> D[AI Reasoning & Planning]
+    C --> E[Asset & Attack-Surface Management]
+    C --> F[Reconnaissance]
+    C --> G[Security Capability Modules]
+    C --> H[Validation Engine]
+    C --> I[Execution Fabric]
+    C --> J[Threat Intelligence]
+    C --> K[Evidence & Reporting]
+    C --> L[Knowledge Base]
+
+    G --> G1[Network]
+    G --> G2[Web]
+    G --> G3[API]
+    G --> G4[Identity / Active Directory]
+    G --> G5[Cloud]
+    G --> G6[Containers / Kubernetes]
+    G --> G7[Wireless]
+    G --> G8[Mobile]
+    G --> G9[IoT / Embedded]
+    G --> G10[DevOps / Supply Chain]
+
+    D --> L
+    E --> L
+    F --> L
+    H --> L
+    J --> L
+
+    H --> K
+    I --> K
 ---
 
 ## AI & Automation
@@ -128,7 +191,7 @@ Detailed technical documentation, architecture diagrams and project demonstratio
 
 ## Author
 
-**Emir Aricioglu**
+**emir ari**
 
 Cybersecurity | Software Development | Security Automation
 
